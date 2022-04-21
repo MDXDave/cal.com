@@ -52,7 +52,6 @@ import { ClientSuspense } from "@components/ClientSuspense";
 import DestinationCalendarSelector from "@components/DestinationCalendarSelector";
 import Loader from "@components/Loader";
 import Shell from "@components/Shell";
-import { UpgradeToProDialog } from "@components/UpgradeToProDialog";
 import ConfirmationDialogContent from "@components/dialog/ConfirmationDialogContent";
 import CustomInputTypeForm from "@components/pages/eventtypes/CustomInputTypeForm";
 import Badge from "@components/ui/Badge";
@@ -128,9 +127,6 @@ const SuccessRedirectEdit = <T extends UseFormReturn<any, any>>({
             {...formMethods.register("successRedirectUrl")}
           />
         </div>
-        <UpgradeToProDialog modalOpen={modalOpen} setModalOpen={setModalOpen}>
-          {t("redirect_url_upgrade_description")}
-        </UpgradeToProDialog>
       </div>
     </>
   );

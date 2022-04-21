@@ -252,7 +252,6 @@ const Layout = ({
                     ))}
                   </nav>
                 </div>
-                <TrialBanner />
                 <div
                   className="rounded-sm pb-2 pl-3 pt-2 pr-2 hover:bg-gray-100 lg:mx-2 lg:pl-2"
                   data-testid="user-dropdown-trigger">
@@ -380,7 +379,6 @@ const Layout = ({
               {/* add padding to content for mobile navigation*/}
               <div className="block pt-12 md:hidden" />
             </div>
-            <LicenseBanner />
           </main>
         </div>
       </div>

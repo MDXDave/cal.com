@@ -1,4 +1,4 @@
-import { CreditCardIcon, KeyIcon, UserGroupIcon, UserIcon } from "@heroicons/react/solid";
+import { KeyIcon, UserGroupIcon, UserIcon } from "@heroicons/react/solid";
 import React from "react";
 
 import { useLocale } from "@lib/hooks/useLocale";
@@ -23,12 +23,7 @@ export default function SettingsShell({ children }: { children: React.ReactNode 
       name: t("teams"),
       href: "/settings/teams",
       icon: UserGroupIcon,
-    },
-    {
-      name: t("billing"),
-      href: "/settings/billing",
-      icon: CreditCardIcon,
-    },
+    }
   ];
 
   return (

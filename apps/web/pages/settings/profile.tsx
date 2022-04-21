@@ -32,8 +32,6 @@ import ColorPicker from "@components/ui/colorpicker";
 import Select from "@components/ui/form/Select";
 import TimezoneSelect, { ITimezone } from "@components/ui/form/TimezoneSelect";
 
-import { UpgradeToProDialog } from "../../components/UpgradeToProDialog";
-
 type Props = inferSSRProps<typeof getServerSideProps>;
 
 function HideBrandingInput(props: { hideBrandingRef: RefObject<HTMLInputElement>; user: Props["user"] }) {
@@ -62,9 +60,6 @@ function HideBrandingInput(props: { hideBrandingRef: RefObject<HTMLInputElement>
           setModalOpen(true);
         }}
       />
-      <UpgradeToProDialog modalOpen={modalOpen} setModalOpen={setModalOpen}>
-        {t("remove_cal_branding_description")}
-      </UpgradeToProDialog>
     </>
   );
 }
